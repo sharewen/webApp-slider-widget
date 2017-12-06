@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-sacle=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" >
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<title>Document</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		background: #333;
+		overflow: hidden;
+	}
+	li,ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+	/* 使得图片居中 webkit-box */
+	li{
+		position: absolute;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+	}
+	li img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	/* 隐藏画布外的内容 */
+	#canvas{
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+</style>
+</head>
+<body>
+<!-- 外层画布 -->
+	<div id="canvas">
+		<ul>
+			<li>
+				<img src="img/1.jpg">
+			</li>
+
+		</ul>
+
+
+	</div>
+	
+</body>
+</html>
